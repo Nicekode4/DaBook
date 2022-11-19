@@ -15,5 +15,16 @@ class Song {
     }
 
     // Functions herunder
+
+    /**
+	 * Funktion til at hente lister med
+	 */
+
+     public function list() {
+        $sql = "SELECT id, title
+                FROM song
+                ORDER BY title";
+                return $this->db->query($sql);
+     }
 }
 ?>
