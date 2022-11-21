@@ -9,4 +9,6 @@ Route::add('/api/song/', function() {
     //echo Tools::jsonParser($result);
     echo "lel";
 });
+
+Route::run('/');
 ?>
